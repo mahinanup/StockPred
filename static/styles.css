@@ -1,0 +1,54 @@
+body{
+background-image: url(https://images.unsplash.com/photo-1586021280718-53fbadcb65a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9sbGFyJTIwc2lnbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+background-size: cover;
+}
+
+.login_title{
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.log_in_box{
+  text-align: center;
+  border: 1px solid white ;
+  border-radius: 20px ;
+  width: 300px;
+  height: 160px;
+  margin: 150px auto;
+  padding: 20px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.text_in_box{
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+.button{
+  background-color: #443737;
+  opacity:0.85;
+  border: none;
+  color: white;
+  padding-left: 20%;
+  padding-right:20%;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+input {
+  width: 97%;
+  height: 35px;
+  border-radius:50px;
+  margin: 4px 0px 10px;
+}
+input::placeholder {
+  padding-left: 30px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StockPred</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Login  -->
+<div class="login_page login_solid_bg">
+  <div class="container">
+    <div class="login_title">
+      <h2>STOCK PRICE PREDICTOR</h2>
+      <!--{% if not_found %}
+      <div class="alert alert-danger" style="color: red;" role="alert">
+Please Enter a Valid Stock Symbol
+</div>
+      {% endif %} -->
+    </div>
+    <div class="log_in_box">
+      <h3 class="text_in_box">Please Enter a Stock Symbol</h3>
+      <form class="login" action = "{{ url_for('insertintotable') }}" method = "POST">
+        <div class="outerbox"
+        <div class="form-group">
+          <input type="text" class="form-control" name = "nm" placeholder="Company Stock Symbol">
+        </div>
+        <div class="form-group">
+
+        </div>
+        <div class="form-group">
+          <button class=" button btn btn-login">PREDICT THE FUTURE</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+<!-- End Lgin  -->
+
+
+
+
+
+
+
+</body>
+</html>
